@@ -1,0 +1,28 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="34" y1="24" x2="182" y2="194" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#A7F3D0"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="81" y1="109" x2="140" y2="174" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="18" width="184" height="184" rx="44" fill="url(#bg)"/>
+  <circle cx="110" cy="78" r="28" fill="#F8D7B5"/>
+  <path d="M90 69C96 56 124 56 130 69" stroke="#0F172A" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="100" cy="80" r="4" fill="#0F172A"/>
+  <circle cx="120" cy="80" r="4" fill="#0F172A"/>
+  <path d="M100 93C106 98 114 98 120 93" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M81 119C81 103 94 90 110 90C126 90 139 103 139 119V154H81V119Z" fill="url(#shirt)"/>
+  <path d="M145 120C155 115 164 122 165 132C166 144 158 149 151 151" stroke="#F8D7B5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M150 151L150 108" stroke="#F8D7B5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M150 108C150 101 156 96 162 96C168 96 173 101 173 108V126" stroke="#F8D7B5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M75 120C66 117 57 122 55 132C54 141 60 148 69 151" stroke="#F8D7B5" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="164" cy="94" r="9" fill="#FACC15"/>
+  <path d="M164 78V68" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M179 94H189" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M153.5 83.5L146.5 76.5" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M174.5 83.5L181.5 76.5" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+</svg>

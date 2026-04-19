@@ -3,33 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Серверное время</title>
+    <title>IT Crowd | IT-аутсорсинг и поддержка бизнеса</title>
+    <meta
+        name="description"
+        content="Современный статический лендинг для IT-аутсорсинга: поддержка офисов, сетей, серверов и рабочих мест без PHP и backend."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container">
-        <p class="eyebrow">PHP API  + Frontend</p>
-        <h1>Текущее серверное время</h1>
-        <section class="clock" aria-live="polite">
-            <div class="time-display">
-                <span class="label">Дата и время</span>
-                <span id="server-time-value" class="time-value">Загрузка...</span>
+    <div class="page-shell">
+        <header class="site-header" data-header>
+            <div class="logo-mark">
+                <img class="logo-image" src="assets/logo-original.png" alt="Логотип IT Crowd">
+                <span class="logo-text">IT Crowd</span>
             </div>
-            <div class="meta">
-                <span class="label">Unix timestamp</span>
-                <span id="server-timestamp-value" class="meta-value">--</span>
-            </div>
-        </section>
-        <p id="status-message" class="info">Время обновляется с сервера каждые 1 секунду</p>
-        <figure class="mountain-card">
-            <img
-                class="mountain-image"
-                src="assets/mountains-panorama.png"
-                alt="Панорамный вид на горы"
-            >
-            <figcaption class="mountain-caption">Горы для настроения и масштаба</figcaption>
-        </figure>
-    </main>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+                Меню
+            </button>
+            <nav class="site-nav" id="site-nav" data-nav>
+                <a href="#services">Услуги</a>
+                <a href="#approach">Подход</a>
+                <a href="#pricing">Тарифы</a>
+                <a href="#cases">Результат</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="top">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow">Статический лендинг без PHP</p>
+                    <h1>IT-поддержка для компаний, которым нужен порядок, скорость и внятный результат</h1>
+                    <p class="hero-text">
+                        Помогаем держать в форме рабочие места, офисные сети, серверы и облачные сервисы.
+                        Вместо устаревшего шаблонного лендинга здесь собран более чистый, быстрый и современный сайт.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#contact">Оставить заявку</a>
+                        <a class="button button-secondary" href="#pricing">Посмотреть тарифы</a>
+                    </div>
+                    <ul class="hero-metrics">
+                        <li>
+                            <strong>15 мин</strong>
+                            <span>среднее время реакции на заявку</span>
+                        </li>
+                        <li>
+                            <strong>24/7</strong>
+                            <span>мониторинг критичных узлов</span>
+                        </li>
+                        <li>
+                            <strong>1 окно</strong>
+                            <span>для всей IT-инфраструктуры</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual" data-reveal>
+                    <div class="mascot-card">
+                        <img class="mascot-image" src="assets/logo-original.png" alt="Фирменный логотип IT Crowd с поднятым пальцем">
+                        <div class="mascot-copy">
+                            <p class="panel-label">Фирменный образ</p>
+                            <p>Использован ваш оригинальный логотип с человечком и поднятым пальцем, чтобы новый светлый макет сохранял узнаваемость старого сайта.</p>
+                        </div>
+                    </div>
+                    <div class="hero-panel hero-panel-primary">
+                        <p class="panel-label">Состояние инфраструктуры</p>
+                        <div class="status-stack">
+                            <div class="status-item">
+                                <span>Рабочие места</span>
+                                <strong>96%</strong>
+                            </div>
+                            <div class="status-item">
+                                <span>Сеть и Wi-Fi</span>
+                                <strong>99.2%</strong>
+                            </div>
+                            <div class="status-item">
+                                <span>Резервное копирование</span>
+                                <strong>активно</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <figure class="hero-image-card">
+                        <img src="assets/mountains-panorama.png" alt="Панорамный горный пейзаж">
+                        <figcaption>
+                            Инфраструктура должна ощущаться так же спокойно, как хороший вид из окна: без хаоса и сюрпризов.
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="section" id="services">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Что берем на себя</p>
+                    <h2>Вместо разрозненных подрядчиков вы получаете одну понятную IT-команду</h2>
+                </div>
+                <div class="card-grid services-grid">
+                    <article class="info-card" data-reveal>
+                        <h3>Поддержка офисов</h3>
+                        <p>Компьютеры, принтеры, периферия, учетные записи, типовые проблемы сотрудников и регулярное обслуживание.</p>
+                    </article>
+                    <article class="info-card" data-reveal>
+                        <h3>Сети и Wi-Fi</h3>
+                        <p>Настройка маршрутизации, сегментации, VPN, точек доступа и базовой сетевой безопасности без лишней сложности.</p>
+                    </article>
+                    <article class="info-card" data-reveal>
+                        <h3>Серверы и облако</h3>
+                        <p>Файловые ресурсы, виртуализация, резервные копии, почта, облачные сервисы и контроль доступности.</p>
+                    </article>
+                    <article class="info-card" data-reveal>
+                        <h3>Инциденты и выезды</h3>
+                        <p>Удаленная помощь для быстрых задач и выезды на место, когда проблему нельзя закрыть дистанционно.</p>
+                    </article>
+                    <article class="info-card" data-reveal>
+                        <h3>Аудит и развитие</h3>
+                        <p>Разбираем узкие места, составляем понятный план обновления техники и снижения эксплуатационных рисков.</p>
+                    </article>
+                    <article class="info-card accent-card" data-reveal>
+                        <h3>Точка роста для бизнеса</h3>
+                        <p>Сайт оформлен как сильный коммерческий лендинг: быстрее грузится, лучше читается и легче адаптируется под реальный бренд.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section split-section" id="approach">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Подход</p>
+                    <h2>Почему аутсорсинг выигрывает у режима “чинить по факту”</h2>
+                </div>
+                <div class="split-layout">
+                    <div class="benefit-list" data-reveal>
+                        <div class="benefit-item">
+                            <span class="benefit-index">01</span>
+                            <div>
+                                <h3>Профилактика вместо авралов</h3>
+                                <p>Мы устраняем причины повторяющихся сбоев, а не просто тушим последствия в моменте.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-index">02</span>
+                            <div>
+                                <h3>Прозрачная зона ответственности</h3>
+                                <p>Есть единая точка входа, понятные SLA-ожидания и список задач, который можно обсуждать в цифрах.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-index">03</span>
+                            <div>
+                                <h3>Сильнее, чем один системный администратор</h3>
+                                <p>Операционные вопросы, сеть, безопасность и инфраструктура не завязаны на одного человека.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="insight-panel" data-reveal>
+                        <p class="panel-label">Что обычно болит</p>
+                        <ul class="bullet-list">
+                            <li>Нестабильный Wi-Fi и непредсказуемая сеть</li>
+                            <li>Сотрудники теряют время на мелкие IT-сбои</li>
+                            <li>Резервные копии “как будто есть”, но не проверены</li>
+                            <li>Нету понятной картины, куда уходят деньги на технику</li>
+                        </ul>
+                        <p class="insight-note">
+                            Новый сайт собран как витрина доверия: без перегруженных таблиц, устаревших блоков и лишних зависимостей.
+                        </p>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section" id="pricing">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Тарифы</p>
+                    <h2>Три сценария подключения вместо громоздких прайс-листов</h2>
+                </div>
+                <div class="pricing-grid">
+                    <article class="pricing-card" data-reveal>
+                        <p class="pricing-tier">Start</p>
+                        <h3>Для маленького офиса</h3>
+                        <p class="pricing-value">от 18 000 ₽/мес</p>
+                        <ul class="bullet-list">
+                            <li>До 10 рабочих мест</li>
+                            <li>Удаленная поддержка и регламентные работы</li>
+                            <li>Ежемесячный профилактический аудит</li>
+                        </ul>
+                    </article>
+                    <article class="pricing-card pricing-card-featured" data-reveal>
+                        <p class="pricing-tier">Core</p>
+                        <h3>Для растущей команды</h3>
+                        <p class="pricing-value">от 35 000 ₽/мес</p>
+                        <ul class="bullet-list">
+                            <li>До 30 рабочих мест</li>
+                            <li>Сети, VPN, резервное копирование</li>
+                            <li>Приоритетные выезды и сопровождение изменений</li>
+                        </ul>
+                    </article>
+                    <article class="pricing-card" data-reveal>
+                        <p class="pricing-tier">Scale</p>
+                        <h3>Для распределенной инфраструктуры</h3>
+                        <p class="pricing-value">по запросу</p>
+                        <ul class="bullet-list">
+                            <li>Несколько локаций или филиалов</li>
+                            <li>Сложная сеть, серверы, облачные сервисы</li>
+                            <li>Персональный план развития IT-среды</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="cases">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Результат</p>
+                    <h2>Что получает компания через 2-3 месяца системной поддержки</h2>
+                </div>
+                <div class="results-grid">
+                    <article class="result-card" data-reveal>
+                        <strong>-42%</strong>
+                        <p>меньше внеплановых обращений по типовым рабочим местам</p>
+                    </article>
+                    <article class="result-card" data-reveal>
+                        <strong>единый реестр</strong>
+                        <p>техники, доступов и критичных сервисов вместо разрозненных заметок</p>
+                    </article>
+                    <article class="result-card" data-reveal>
+                        <strong>контроль рисков</strong>
+                        <p>по резервным копиям, доступам, обновлениям и сетевой отказоустойчивости</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section faq-section">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">FAQ</p>
+                    <h2>Коротко о том, что чаще всего спрашивают перед подключением</h2>
+                </div>
+                <div class="faq-list">
+                    <article class="faq-item" data-faq data-reveal>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            Можно ли начать с аудита, а не с полного договора?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Да. Часто разумнее сначала провести аудит, зафиксировать риски и уже потом выбрать формат сопровождения.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item" data-faq data-reveal>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            Вы работаете только удаленно?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Нет. Базовые инциденты удобно закрывать удаленно, а задачи по сети, инфраструктуре и железу можно выносить в выездные работы.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item" data-faq data-reveal>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            Что делать с текущим сайтом и реальными контактами?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Этот макет уже готов под замену контента. Достаточно подставить ваш бренд, телефон, почту и реальные тарифы.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section contact-section" id="contact">
+                <div class="contact-card" data-reveal>
+                    <div>
+                        <p class="eyebrow">Контакты</p>
+                        <h2>Обсудим, как должен выглядеть финальный сайт и что в нем оставить от текущей структуры</h2>
+                        <p class="contact-text">
+                            Сейчас в макете стоят безопасные демо-данные. После согласования можно быстро заменить тексты,
+                            тарифы и добавить реальные формы, мессенджеры или аналитику.
+                        </p>
+                        <div class="contact-meta">
+                            <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+                            <a href="mailto:info@itcrowd-nvr.ru">info@itcrowd-nvr.ru</a>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-form>
+                        <label>
+                            <span>Ваше имя</span>
+                            <input type="text" name="name" placeholder="Как к вам обращаться" required>
+                        </label>
+                        <label>
+                            <span>Контакт</span>
+                            <input type="text" name="contact" placeholder="Телефон или email" required>
+                        </label>
+                        <label>
+                            <span>Что нужно</span>
+                            <textarea name="message" rows="4" placeholder="Коротко опишите задачу" required></textarea>
+                        </label>
+                        <button class="button button-primary" type="submit">Отправить запрос</button>
+                        <p class="form-note" data-form-note>Форма работает на скриптах и сейчас показывает локальное подтверждение без отправки на сервер.</p>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
