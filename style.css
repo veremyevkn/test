@@ -84,6 +84,28 @@ h1 {
     font-size: 0.9rem;
 }
 
+.mountain-card {
+    margin-top: 28px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+}
+
+.mountain-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.mountain-caption {
+    margin-top: 12px;
+    color: #9db0c8;
+    font-size: 0.9rem;
+}
+
 .info-error {
     color: #ff9f9f;
 }
