@@ -7,6 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
+    if (window.location.protocol === 'file:') {
+        timeEl.textContent = 'PHP не запущен';
+        timestampEl.textContent = '--';
+        statusEl.textContent = 'Открой проект через локальный PHP-сервер, иначе time.php не выполнится';
+        statusEl.classList.add('info-error');
+        return;
+    }
+
     async function updateServerTime() {
         try {
             const response = await fetch('time.php', {
