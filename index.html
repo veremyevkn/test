@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серверное время</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <p class="eyebrow">PHP API + Frontend</p>
+        <h1>Текущее серверное время</h1>
+        <section class="clock" aria-live="polite">
+            <div class="time-display">
+                <span class="label">Дата и время</span>
+                <span id="server-time-value" class="time-value">Загрузка...</span>
+            </div>
+            <div class="meta">
+                <span class="label">Unix timestamp</span>
+                <span id="server-timestamp-value" class="meta-value">--</span>
+            </div>
+        </section>
+        <p id="status-message" class="info">Время обновляется с сервера каждые 1 секунду</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
